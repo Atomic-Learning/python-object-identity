@@ -1,0 +1,36 @@
+
+<p>When you create a value in Python, it lives in memory at a specific location. A variable is not the value itself—it's a reference to the value's location in memory.</p>
+
+<h2>The <code class="language-python">id()</code> Function</h2>
+
+<p>The <code class="language-python">id()</code> function returns the memory address (identity) of an object:</p>
+
+<py-cell>x = [1, 2, 3]
+print(id(x))</py-cell>
+
+<p>The exact number depends on your computer and Python session, but it uniquely identifies that object in memory.</p>
+
+<h2>The hex() Function</h2>
+
+<p>Memory addresses are often displayed in hexadecimal (base 16). Use the <code class="language-python">hex</code> function to convert to this format:</p>
+
+<py-cell>x = [1, 2, 3]
+print(hex(id(x)))</py-cell>
+
+<h2>Multiple Variables Pointing to the Same Object</h2>
+
+<p>When you assign one variable to another, both refer to the same object in memory:</p>
+
+<py-cell>x = 5
+y = x
+print("Same id?", id(x) == id(y))
+print("x:", hex(id(x)))
+print("y:", hex(id(y)))
+
+x = 10
+print("After reassigning x:")
+print("Same id?", id(x) == id(y))
+print("x:", hex(id(x)))
+print("y:", hex(id(y)))
+
+print(list1)</py-cell>

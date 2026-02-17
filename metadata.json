@@ -1,0 +1,21 @@
+{
+    "title": "Python: Object Identity and Memory",
+    "slug": "python-object-identity",
+    "description": "Understanding that variables reference objects in memory. Using id() and hex() functions to examine memory addresses.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 4,
+    "prerequisites": [
+        "programming-mutability-reference-semantics",
+        "python-variables",
+        "maths-hexadecimal",
+        "programming-calling-functions"
+    ],
+    "related": [
+        "python-is-operator"
+    ]
+}
